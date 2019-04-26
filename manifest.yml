@@ -9,5 +9,5 @@ applications:
 
     ...
     routes:
-        - route: <initials>-moviefun.apps.pcf.paltraining.perficient.
+        - route: ppahade-moviefun.apps.pcf.paltraining.perficient.
     ...
