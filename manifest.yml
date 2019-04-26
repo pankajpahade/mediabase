@@ -6,3 +6,8 @@ applications:
   - route: <initials>-moviefun.apps.pcf.paltraining.perficient.com
   services:
   - media-database
+
+    ...
+    routes:
+        - route: <initials>-moviefun.apps.pcf.paltraining.perficient.
+    ...
