@@ -5,6 +5,4 @@ applications:
   routes:
   - route: ppahade-moviefun.apps.pcf.paltraining.perficient.com
   services:
-    -
   - media-database
-
