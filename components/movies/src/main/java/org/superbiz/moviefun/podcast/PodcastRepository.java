@@ -1,6 +1,7 @@
-package org.superbiz.moviefun.podcasts;
+package org.superbiz.moviefun.podcast;
 
 import org.springframework.data.repository.CrudRepository;
+import org.superbiz.moviefun.podcast.Podcast;
 
 import java.util.Optional;
 
