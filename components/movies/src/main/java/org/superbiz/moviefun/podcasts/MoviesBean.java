@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.superbiz.moviefun.movies;
+package org.superbiz.moviefun.podcasts;
 
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;

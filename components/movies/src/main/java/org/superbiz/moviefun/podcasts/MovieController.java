@@ -1,4 +1,4 @@
-package org.superbiz.moviefun.movies;
+package org.superbiz.moviefun.podcasts;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/movies")
+@RequestMapping("/podcasts")
 public class MovieController {
 
     private MoviesBean moviesBean;
