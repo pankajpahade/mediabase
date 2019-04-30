@@ -14,7 +14,7 @@ import org.superbiz.moviefun.podcastsui.PodcastClient;
 @SpringBootApplication
 public class Application {
 
-    @Value("${podcasts.ms.url")
+    @Value("${movies.ms.url")
     private String moviesURL;
 
     @Value("${podcasts.ms.url")
