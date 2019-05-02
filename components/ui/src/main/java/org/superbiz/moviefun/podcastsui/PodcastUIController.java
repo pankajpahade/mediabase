@@ -18,4 +18,5 @@ public class PodcastUIController {
         model.put("podcasts", podcastClient.getAll() );
         return "podcasts";
     }
+
 }
