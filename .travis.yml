@@ -15,7 +15,7 @@ jobs:
       script:
         - ./gradlew clean build -x test
         - ls -l *
-        - ls -l applications/moviefun/build/libs/*
+        - ls -l applications/moviefun/build/*
       before_deploy:
         - git config --local user.name "Build Bot"
         - git config --local user.email "buildbot@example.com"
