@@ -19,12 +19,6 @@ import org.superbiz.moviefun.podcastsui.PodcastClient;
 @SpringBootApplication
 public class Application {
 
-   /* @Value("${movies.ms.url")
-    private String moviesURL;
-
-    @Value("${podcasts.ms.url")
-    private String podcastsURL;*/
-
     public static void main(String... args) {
         SpringApplication.run(Application.class, args);
     }
@@ -34,8 +28,8 @@ public class Application {
         return new ServletRegistrationBean(actionServlet, "/moviefun/*");
     }
 
-    @LoadBalanced
     @Bean
+    @LoadBalanced
     public RestOperations restOperations() {
         return new RestTemplate();
     }

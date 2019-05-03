@@ -2,7 +2,8 @@ server.port: 8090
 
 spring:
   application:
-    name: moviefun
+    name: podcasts-ms
+
   jpa:
     generate-ddl: true
     properties.hibernate.dialect: org.hibernate.dialect.MySQL5Dialect
