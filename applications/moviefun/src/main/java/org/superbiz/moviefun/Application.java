@@ -14,16 +14,10 @@ import org.superbiz.moviefun.moviesui.ActionServlet;
 import org.superbiz.moviefun.moviesui.MovieClient;
 import org.superbiz.moviefun.podcastsui.PodcastClient;
 
-@EnableCircuitBreaker
-@EnableEurekaClient
 @SpringBootApplication
+@EnableEurekaClient
+@EnableCircuitBreaker
 public class Application {
-
-   /* @Value("${movies.ms.url")
-    private String moviesURL;
-
-    @Value("${podcasts.ms.url")
-    private String podcastsURL;*/
 
     public static void main(String... args) {
         SpringApplication.run(Application.class, args);
@@ -34,14 +28,15 @@ public class Application {
         return new ServletRegistrationBean(actionServlet, "/moviefun/*");
     }
 
-    @LoadBalanced
     @Bean
+    @LoadBalanced
     public RestOperations restOperations() {
         return new RestTemplate();
     }
 
     @Bean
     public MovieClient movieClient(RestOperations restOperations) {
+        //return new MovieClient(moviesURL, restOperations);
         return new MovieClient("//movies-ms/movies", restOperations);
     }
 

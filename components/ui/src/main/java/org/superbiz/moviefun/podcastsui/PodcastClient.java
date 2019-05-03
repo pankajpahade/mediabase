@@ -1,8 +1,9 @@
 package org.superbiz.moviefun.podcastsui;
 
+
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
-import org.slf4j.LoggerFactory;
 import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.http.HttpMethod;
 import org.springframework.web.client.RestOperations;
@@ -90,4 +91,5 @@ public class PodcastClient {
         String findURL = new StringBuilder(moviesURL).append("/").append(id).toString();
         return restOperations.getForEntity(findURL, PodcastUI.class).getBody();
     }
+
 }
