@@ -14,9 +14,9 @@ import org.superbiz.moviefun.moviesui.ActionServlet;
 import org.superbiz.moviefun.moviesui.MovieClient;
 import org.superbiz.moviefun.podcastsui.PodcastClient;
 
-@EnableCircuitBreaker
-@EnableEurekaClient
 @SpringBootApplication
+@EnableEurekaClient
+@EnableCircuitBreaker
 public class Application {
 
     public static void main(String... args) {
@@ -36,6 +36,7 @@ public class Application {
 
     @Bean
     public MovieClient movieClient(RestOperations restOperations) {
+        //return new MovieClient(moviesURL, restOperations);
         return new MovieClient("//movies-ms/movies", restOperations);
     }
 
