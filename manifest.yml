@@ -28,3 +28,7 @@ applications:
       - service-registry
       - circuit-breaker
       - mediabase-sso
+
+
+
+
