@@ -18,7 +18,6 @@ package org.superbiz.moviefun.movies;
 
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
-import org.superbiz.moviefun.movies.Movie;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
