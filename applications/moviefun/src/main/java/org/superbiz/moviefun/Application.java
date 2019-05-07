@@ -1,6 +1,5 @@
 package org.superbiz.moviefun;
 
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.servlet.ServletRegistrationBean;
@@ -36,6 +35,7 @@ public class Application {
 
     @Bean
     public MovieClient movieClient(RestOperations restOperations) {
+        //return new MovieClient(moviesURL, restOperations);
         return new MovieClient("//movies-ms/movies", restOperations);
     }
 
